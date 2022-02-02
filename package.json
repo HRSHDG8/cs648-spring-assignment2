@@ -1,0 +1,31 @@
+{
+  "name": "cs648assignment1",
+  "version": "1.0.0",
+  "description": "Assignment 2 for CS648",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run compile && nodemon -w server server/server.js",
+    "compile": "babel --presets @babel/preset-react src --out-dir public",
+    "watch": "npm run compile -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRSHDG8/cs648-spring-assignment2.git"
+  },
+  "author": "Harsh Maheshwari (8250270267)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HRSHDG8/cs648-spring-assignment2/issues"
+  },
+  "homepage": "https://github.com/HRSHDG8/cs648-spring-assignment2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "nodemon": "^2.0.7"
+  }
+}
